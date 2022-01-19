@@ -1256,7 +1256,7 @@ function TSB_SpellBookFrame_OnEvent(self, event, ...)
         -- When a new spell (or higher rank) is learned, start flashing the spellbook tab (or queue it up if the spellbook is hidden/viewing "pet").
         -- NOTE: arg1 = Number of the "spell school" tab where the spell/ability was added. Indexed as 1 (general tab), 2 (next tab after that), etc...
         -- NOTE: Unlike Blizzard's spellbook code, we actually queue up the flashing EVEN IF we're on the Pet tab.
-        TSB_SkillLineFlash("queue", arg1);
+       
 
         -- Start flashing IMMEDIATELY if the spellbook is already open.
         -- NOTE: This is something that the original Blizzard spellbook never did, which meant that its flashing-state was "lost" if your spellbook
